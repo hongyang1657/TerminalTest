@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="fitme.ai.terminaltest.MainActivity">
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="bottom"
+        android:text="Hello World!" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_weight="1"
+            android:background="@null"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/button1"
+            android:onClick="onClick"
+            android:text="发送"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/button2"
+            android:onClick="onClick"
+            android:text="setprop"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/button3"
+            android:onClick="onClick"
+            android:text="stop"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/button4"
+            android:onClick="onClick"
+            android:text="start"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/button5"
+            android:onClick="onClick"
+            android:text="netcfg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>
